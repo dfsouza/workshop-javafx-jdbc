@@ -2,14 +2,14 @@ package model.entities;
 
 import java.io.Serializable;
 
-public class Department implements Serializable {
+public class Department implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-
 	private Integer id;
 	private String name;
 	
-	public Department() {
+	public Department () {
+		
 	}
 
 	public Department(Integer id, String name) {
@@ -18,7 +18,7 @@ public class Department implements Serializable {
 	}
 
 	public Integer getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Integer id) {
@@ -26,7 +26,7 @@ public class Department implements Serializable {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -60,6 +60,7 @@ public class Department implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", name=" + name + "]";
+		return "Department [id=" + getId() + ", name=" + getName() + "]";
 	}
+	
 }
